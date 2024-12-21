@@ -1,0 +1,5 @@
+__pycache__/
+cokk_bot.egg-info/
+logs/
+venv/
+*.env
