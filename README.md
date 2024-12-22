@@ -14,9 +14,9 @@ Recommendation Generation: Return a dataframe of recommended ingredients from th
 As users increasingly rely on chatbots like ChatGPT and Meta for solutions, this project explores the potential of utilizing chatbot outputs to drive recommender systems. By tapping into the conversational AI ecosystem, we can create more personalized and context-aware recommendations.
 ## Features
 ------------
-LLM Integration: Seamlessly integrates with LLMs to leverage their output.
-Ingredient Extraction: We have provided prompts to the LLM, the ouput should be strictly in json format providing recipe name, recipe ingredients
-Similarity Search: from the above mentioned output the ingredients is a list of items. We perform similarity search on list from the corpus(product names which are fed to the fiass db) and obtain the the dataframe .
+LLM Integration: Seamlessly integrates with LLMs to leverage their output.\
+Ingredient Extraction: We have provided prompts to the LLM, the ouput should be strictly in json format providing recipe name, recipe ingredients\
+Similarity Search: from the above mentioned output the ingredients is a list of items. We perform similarity search on list from the corpus(product names which are fed to the fiass db) and obtain the the dataframe.
 
 https://github.com/user-attachments/assets/5fe1b657-cec4-43cd-a44b-ccf1e54058a3
 
