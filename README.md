@@ -40,6 +40,7 @@ https://github.com/user-attachments/assets/5fe1b657-cec4-43cd-a44b-ccf1e54058a3
   pip install -r request.txt
   ```
 ## Deployment
+---------------
 in command prompt
 - to create the fiass DB (it is already created and available in artifacts)
   ```bash
@@ -53,6 +54,11 @@ in command prompt
   ```bash
   streamlit run streamlit_app.py
   ```
+## Acknowledgements
+---------------
+ - [streamlit Documentation](https://docs.streamlit.io/)
+ - [groq api](https://console.groq.com/login)
+ - [huggingface embeddings](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
 ## Future Work
 --------------
 Improve Ingredient Extraction: Enhance ingredient extraction accuracy using NLP techniques.
@@ -60,6 +66,5 @@ Enhance Recommendation Algorithm: Explore more advanced recommendation algorithm
 create a larger collection of vector dtabases with variety of products and explore recommednind multiple products as per user query.
 
 ## License
--------
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
