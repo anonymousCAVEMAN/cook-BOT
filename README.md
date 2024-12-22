@@ -23,6 +23,16 @@ Personalized Recommendations: Generates relevant and personalized recommendation
 Python 3.x
 Faiss library
 LLM API access (e.g., ChatGPT API)
+## Deployment
+in ur 
+- for fastapi 
+  ```bash
+  uvicorn fastapi_app:app --reload
+  ```
+- for streamlit visualisation
+  ```bash
+  streamlit run streamlit_app.py
+  ```
 ## Future Work
 --------------
 Expand to Multiple LLMs: Integrate with multiple LLMs to increase robustness.
