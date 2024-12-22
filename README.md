@@ -15,11 +15,11 @@ As users increasingly rely on chatbots like ChatGPT and Meta for solutions, this
 ## Features
 ------------
 LLM Integration: Seamlessly integrates with LLMs to leverage their output.
-![flower](https://github.com/user-attachments/assets/b5d7e0bf-3f23-4f15-a3d5-cb6fc2903ec3)
+Ingredient Extraction: We have provided prompts to the LLM, the ouput should be strictly in json format providing recipe name, recipe ingredients
+Similarity Search: from the above mentioned output the ingredients is a list of items. We perform similarity search on list from the corpus(product names which are fed to the fiass db) and obtain the the dataframe .
 
-Ingredient Extraction: Accurately extracts ingredients from LLM responses.
-Similarity Search: Efficiently performs similarity searches using Faiss.
-Personalized Recommendations: Generates relevant and personalized recommendations.
+https://github.com/user-attachments/assets/5fe1b657-cec4-43cd-a44b-ccf1e54058a3
+
 ## Requirements
 ---------------
 Python 3.x
