@@ -22,7 +22,7 @@ https://github.com/user-attachments/assets/5fe1b657-cec4-43cd-a44b-ccf1e54058a3
 
 ## Requirements
 ---------------
-Python 3.x
+-Python 3.x
 -Faiss library
 -LLM API access (here we have used groqAPI)
 -huggingface embeddings
