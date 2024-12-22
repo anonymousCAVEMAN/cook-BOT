@@ -15,6 +15,8 @@ As users increasingly rely on chatbots like ChatGPT and Meta for solutions, this
 ## Features
 ------------
 LLM Integration: Seamlessly integrates with LLMs to leverage their output.
+![flower](https://github.com/user-attachments/assets/b5d7e0bf-3f23-4f15-a3d5-cb6fc2903ec3)
+
 Ingredient Extraction: Accurately extracts ingredients from LLM responses.
 Similarity Search: Efficiently performs similarity searches using Faiss.
 Personalized Recommendations: Generates relevant and personalized recommendations.
@@ -43,9 +45,7 @@ in command prompt
 Improve Ingredient Extraction: Enhance ingredient extraction accuracy using NLP techniques.
 Enhance Recommendation Algorithm: Explore more advanced recommendation algorithms.
 create a larger collection of vector dtabases with variety of products and explore recommednind multiple products as per user query.
-## Contributing
-------------
-Contributions are welcome! Please submit issues or pull requests.
+
 ## License
 -------
 This project is licensed under .
