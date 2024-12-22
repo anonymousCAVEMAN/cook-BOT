@@ -16,7 +16,7 @@ As users increasingly rely on chatbots like ChatGPT and Meta for solutions, this
 ------------
 To run this project, you will need to add the following environment variables to your .env file
 
-`GROQ_API_KEY` for 
+`GROQ_API_KEY` for your LLM or `OPENAI_API_KEY`
 
 `HF_TOKEN` for embeddings
 
@@ -30,11 +30,15 @@ https://github.com/user-attachments/assets/5fe1b657-cec4-43cd-a44b-ccf1e54058a3
 
 ## Requirements
 ---------------
--Python 3.x\
+-Python 3.x (precise 3.10.10)\
 -Faiss library\
 -LLM API access (here we have used groqAPI)\
 -huggingface embeddings
 -groqAPI
+- Install project dependencies(requirements.txt has all the installed dependencies listed 
+  ```bash
+  pip install -r request.txt
+  ```
 ## Deployment
 in command prompt
 - to create the fiass DB (it is already created and available in artifacts)
@@ -57,5 +61,5 @@ create a larger collection of vector dtabases with variety of products and explo
 
 ## License
 -------
-This project is licensed under .
-Feel free to modify this template to better suit your project's needs. Good luck with your project!
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
