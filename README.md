@@ -26,6 +26,7 @@ https://github.com/user-attachments/assets/5fe1b657-cec4-43cd-a44b-ccf1e54058a3
 -Faiss library\
 -LLM API access (here we have used groqAPI)\
 -huggingface embeddings
+-groqAPI
 ## Deployment
 in command prompt
 - to create the fiass DB (it is already created and available in artifacts)
