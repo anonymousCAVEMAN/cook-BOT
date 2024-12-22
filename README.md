@@ -12,14 +12,6 @@ Recommendation Generation: Return a dataframe of recommended ingredients from th
 ## Motivation
 ------------
 As users increasingly rely on chatbots like ChatGPT and Meta for solutions, this project explores the potential of utilizing chatbot outputs to drive recommender systems. By tapping into the conversational AI ecosystem, we can create more personalized and context-aware recommendations.
-## Environment Variables
-------------
-To run this project, you will need to add the following environment variables to your .env file
-
-`GROQ_API_KEY` for your LLM or `OPENAI_API_KEY`
-
-`HF_TOKEN` for embeddings
-
 ## Features
 ------------
 LLM Integration: Seamlessly integrates with LLMs to leverage their output.
@@ -39,6 +31,14 @@ https://github.com/user-attachments/assets/5fe1b657-cec4-43cd-a44b-ccf1e54058a3
   ```bash
   pip install -r request.txt
   ```
+## Environment Variables
+------------
+To run this project, you will need to add the following environment variables to your .env file
+
+`GROQ_API_KEY` for your LLM or `OPENAI_API_KEY`
+
+`HF_TOKEN` for embeddings
+
 ## Deployment
 ---------------
 in command prompt
