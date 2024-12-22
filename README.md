@@ -16,7 +16,8 @@ As users increasingly rely on chatbots like ChatGPT and Meta for solutions, this
 ------------
 LLM Integration: Seamlessly integrates with LLMs to leverage their output.\
 Ingredient Extraction: We have provided prompts to the LLM, the ouput should be strictly in json format providing recipe name, recipe ingredients\
-Similarity Search: from the above mentioned output the ingredients is a list of items. We perform similarity search on list from the corpus(product names which are fed to the fiass db) and obtain the the dataframe.
+Similarity Search: from the above mentioned output the ingredients is a list of items. We perform similarity search on list from the corpus(product names which are fed to the fiass db)
+recommender : we get the similarty score on if ingredients searched in the Fiass DB if the ingredient is avaiilable in the dataset. we choose the item with highest score and is recommended. this at times makes silly mistake ex. a food item requires lemon juice as a ingredient when we perform similarity search we get lime packaged juice not solid lemons which we squeeze. 
 
 https://github.com/user-attachments/assets/5fe1b657-cec4-43cd-a44b-ccf1e54058a3
 
