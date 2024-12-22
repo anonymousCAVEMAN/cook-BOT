@@ -2,7 +2,7 @@
 ======================================
 ## Overview
 ------------
-This project leverages the output of Large Language Models (LLMs) to power a recommender system. Specifically, we use the LLM's response to a "recipe" query to extract ingredients and perform similarity searches, recommending relevant products from vector databases.
+This project leverages the output of Large Language Models (LLMs) to power a recommender system. Specifically, we use the LLM's response to a "food recipe" query to extract ingredients and perform similarity searches, recommending relevant products from vector databases.
 ## Architecture
 ---------------
 LLM Querying: Send a recipe query to an LLM .\
