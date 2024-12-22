@@ -21,8 +21,9 @@ Personalized Recommendations: Generates relevant and personalized recommendation
 ## Requirements
 ---------------
 Python 3.x
-Faiss library
-LLM API access (e.g., ChatGPT API)
+-Faiss library
+-LLM API access (here we have used groqAPI)
+-huggingface embeddings
 ## Deployment
 in ur 
 - for fastapi 
