@@ -26,8 +26,8 @@ https://github.com/user-attachments/assets/5fe1b657-cec4-43cd-a44b-ccf1e54058a3
 -Python 3.x (precise 3.10.10)\
 -Faiss library\
 -LLM API access (here we have used groqAPI)\
--huggingface embeddings
--groqAPI
+-huggingface embeddings\
+-groqAPI\
 -Install project dependencies(requirements.txt has all the installed dependencies listed 
   ```bash
   pip install -r request.txt
