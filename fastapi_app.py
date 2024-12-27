@@ -21,7 +21,21 @@ df = pd.read_csv('E:\\python\\2.PROJECTS\\cook_bot\\artifacts\\filtered_df.csv')
 # load 
 db_load = FAISS.load_local(folder_path="artifacts",index_name="products",allow_dangerous_deserialization=True,embeddings=embeddings)
 
+# products on which db was created 
+with open("artifacts/corpus.pkl", "rb") as file:
+    corpus = pickle.load(file)
+
 app = FastAPI()
+
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 qa_prompt = ChatPromptTemplate.from_messages([
     ("system", '''
@@ -34,22 +48,6 @@ qa_prompt = ChatPromptTemplate.from_messages([
      instructions and ingredients to cook a recipe strictly in json format '''),
     ("human", "{input}")
 ])
-
-from fastapi.middleware.cors import CORSMiddleware
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-class Message(BaseModel):
-    message: str
-
-with open("artifacts/corpus.pkl", "rb") as file:
-    corpus = pickle.load(file)
 
 def json_response(response):
         json_match = re.search(r"{.*}", response, re.DOTALL)
@@ -71,6 +69,9 @@ def item_search(items):
             b = corpus.index(page_content)
             df_list.append(b)
     return df_list
+
+class Message(BaseModel):
+    message: str
 
 @app.post("/chat")
 async def chat_with_llm(message: Message):

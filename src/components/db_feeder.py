@@ -75,8 +75,6 @@ class DbCreation:
             documents = [Document(page_content=item) for item in product]
             db = FAISS.from_documents(documents,embeddings)
             db.save_local(folder_path="artifacts/",index_name="products")
-
-            return 
         
         except Exception as e:
             raise CustomException(e,sys)
