@@ -18,7 +18,10 @@ groq_api_key=os.getenv("GROQ_API_KEY")
 llm=ChatGroq(groq_api_key=groq_api_key,model_name="llama-3.1-70b-versatile")
 
 df = pd.read_csv('E:\\python\\2.PROJECTS\\cook_bot\\artifacts\\filtered_df.csv')
+
 # load 
+# products.faiss
+# products.pkl both files
 db_load = FAISS.load_local(folder_path="artifacts",index_name="products",allow_dangerous_deserialization=True,embeddings=embeddings)
 
 # products on which db was created 
